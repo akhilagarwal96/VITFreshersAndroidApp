@@ -3,6 +3,7 @@
     package="com.akhilagarwal96.vitfreshers" >
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -37,6 +38,10 @@
         <activity
             android:name=".Feedback"
             android:label="@string/title_activity_feedback" >
+        </activity>
+        <activity
+            android:name=".Info"
+            android:label="@string/title_activity_info" >
         </activity>
     </application>
 

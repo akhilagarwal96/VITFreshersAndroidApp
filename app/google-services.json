@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "807114391361",
-    "firebase_url": "https://vitfreshers-b39cd.firebaseio.com",
-    "project_id": "vitfreshers-b39cd",
-    "storage_bucket": "vitfreshers-b39cd.appspot.com"
+    "project_number": "545471155062",
+    "firebase_url": "https://vit-freshers.firebaseio.com",
+    "project_id": "vit-freshers",
+    "storage_bucket": "vit-freshers.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:807114391361:android:9974bfdb1f8f6dcd",
+        "mobilesdk_app_id": "1:545471155062:android:9974bfdb1f8f6dcd",
         "android_client_info": {
           "package_name": "com.akhilagarwal96.vitfreshers"
         }
       },
       "oauth_client": [
         {
-          "client_id": "807114391361-46kgd9jkj7ibptvp3a3djobell8n2hfg.apps.googleusercontent.com",
+          "client_id": "545471155062-slafnkvh70s6mgl50b4g1jijhcui9kb3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBAUum8F5loNtFddJl4UEnPHvBnG4w0yOk"
+          "current_key": "AIzaSyD5g7oUrgabKMipS85ar6tKKz4ZFLIcBTY"
         }
       ],
       "services": {

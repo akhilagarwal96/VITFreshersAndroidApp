@@ -8,6 +8,5 @@
         android:title="Developers"
         android:orderInCategory="100"
         android:icon="@drawable/info"
-        android:onClick="dev_clicked"
         app:showAsAction="always" />
 </menu>

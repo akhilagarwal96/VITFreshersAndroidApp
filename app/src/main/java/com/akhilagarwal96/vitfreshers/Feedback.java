@@ -6,7 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.firebase.client.Firebase;
+
 public class Feedback extends Fragment{
+
+    Firebase myFirebaseRef = new Firebase("https://vit-freshers.firebaseio.com/");
 
 
     @Override

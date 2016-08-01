@@ -13,6 +13,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import com.firebase.client.Firebase;
+
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements ActionBar.TabListener{
@@ -39,6 +41,9 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        Firebase.setAndroidContext(this);
+            // other setup code
 
         // Set up the action bar.
         final ActionBar actionBar = getSupportActionBar();
@@ -91,7 +96,9 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
         // as you specify a parent activity in AndroidManifest.xml.
 
         switch (item.getItemId()){
-            case R.id.action_settings:
+            case R.id.action_developers:
+                Intent intent1 = new Intent(this,Info.class);
+                startActivity(intent1);
                 return true;
        }
 

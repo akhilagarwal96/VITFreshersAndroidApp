@@ -30,11 +30,11 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
     SectionsPagerAdapter mSectionsPagerAdapter;
+    ViewPager mViewPager;
 
     /**
      * The {@link ViewPager} that will host the section contents.
      */
-    ViewPager mViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -147,11 +147,11 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
                 case 0:
                     return new Home();
                 case 1:
-                    return new FAQs();
+                    return new Services();
                 case 2:
                     return new Resale();
                 case 3:
-                    return new Services();
+                    return new FAQs();
                 case 4:
                     return new Feedback();
             }
@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
+            // Show 5 total pages.
             return 5;
         }
 

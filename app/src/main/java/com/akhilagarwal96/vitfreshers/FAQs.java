@@ -53,12 +53,12 @@ public class FAQs extends Fragment{
 
                         if (index == 1) {
                             String z1 = (String) dataSnapshot2.getValue();
-                            text2[i] = z1;
+                            text1[i] = z1;
 
                         }
                         if (index == 2) {
                             String z2 = (String) dataSnapshot2.getValue();
-                            text1[i] = z2;
+                            text2[i] = z2;
 
                         }
                         i = i + 1;

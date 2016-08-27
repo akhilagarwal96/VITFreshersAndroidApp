@@ -6,7 +6,50 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.akhilagarwal96.vitfreshers.Feedback">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/image_feedback"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:src="@drawable/adg_feedback"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write to us"
+        android:layout_gravity="center_horizontal"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/image_feedback"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_option"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/feedback"
+        android:ems="17"
+        android:hint="Please write here"
+        android:layout_gravity="left"
+        android:layout_above="@+id/submit"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="46dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="64dp" />
 
 </RelativeLayout>

@@ -1,7 +1,5 @@
 package com.akhilagarwal96.vitfreshers;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -78,7 +76,7 @@ public class Services extends Fragment {
         int i=0;
 
         Button b1=(Button)rootView.findViewById(R.id.ser_button);
-        b1.setOnClickListener(new View.OnClickListener() {
+        /*b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent call_1 = new Intent(Intent.ACTION_DIAL);
@@ -87,6 +85,7 @@ public class Services extends Fragment {
                 startActivity(call_1);
             }
         });
+        */
         return rootView;
     }
 

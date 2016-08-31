@@ -18,7 +18,6 @@ public class ListAdapterFAQ extends ArrayAdapter{
         this.text2=text2;
     }
 
-
     private final Activity context;
     private final String[] text1;
     private final String[] text2;

@@ -19,12 +19,6 @@ public class Feedback extends Fragment {
     Spinner spinnerOption;
     EditText feedback;
 
-    String[] Sugestions = new String[]{
-            "Have an issue",
-            "Report a bug",
-            "Ask question"
-    };
-
     Firebase myFirebaseRef = new Firebase("https://vit-freshers.firebaseio.com/");
 
 
@@ -34,9 +28,14 @@ public class Feedback extends Fragment {
         View rootView = inflater.inflate(R.layout.activity_feedback, container, false);
 
         imageButton = (ImageButton) rootView.findViewById(R.id.submit);
-        spinnerOption = (Spinner) rootView.findViewById(R.id.spinner_option);
         feedback = (EditText) rootView.findViewById(R.id.feedback);
 
+       /* spinnerOption = (Spinner) rootView.findViewById(R.id.spinner_option);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.Suggestions, R.layout.activity_feedback);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerOption.setAdapter(adapter);
+        spinnerOption.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
+        */
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

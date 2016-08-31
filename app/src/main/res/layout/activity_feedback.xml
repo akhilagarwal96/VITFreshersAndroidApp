@@ -40,16 +40,18 @@
         android:ems="17"
         android:hint="Please write here"
         android:layout_gravity="left"
-        android:layout_above="@+id/submit"
+        android:layout_below="@+id/spinner_option"
         android:layout_alignParentEnd="true" />
 
-    <ImageButton
-        android:layout_width="46dp"
-        android:layout_height="50dp"
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Submit"
+        android:textColor="@color/white"
+        android:background="@android:color/transparent"
         android:id="@+id/submit"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="64dp" />
+        android:layout_below="@+id/feedback"/>
+
 
 </RelativeLayout>

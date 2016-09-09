@@ -2,62 +2,6 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Adm\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.2.2\d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b\jackson-core-2.2.2.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\jackson-core-2.2.2-8d9ec5a9e171fa7164ecc72c67a7615e28e7c6d4.jar" />
-    </item>
-    <item
-        jar="C:\Users\Adm\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.2.2\285cb9c666f0f0f3dd8a1be04e1f457eb7b15113\jackson-annotations-2.2.2.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\jackson-annotations-2.2.2-27ac42b9141691a7fda0abf5585c2bb96681af40.jar" />
-    </item>
-    <item
-        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes-9996185bbaa3bd6fb72f136e34a2d14c0f2feb40.jar" />
-    </item>
-    <item
-        jar="C:\Users\Adm\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-jvm\2.3.1\4d53b7d6983247af02b8fe7e4228fff555a5e828\firebase-client-jvm-2.3.1.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="4d53b7d6983247af02b8fe7e4228fff555a5e828">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\firebase-client-jvm-2.3.1-3bc1645087cb8216fa79ce79d5d01f504e410463.jar" />
-    </item>
-    <item
-        jar="C:\Users\Adm\.gradle\caches\modules-2\files-2.1\com.firebase\tubesock\0.0.11\d37cb67277928cf59344b4196af8d9cee1f1a27c\tubesock-0.0.11.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="d37cb67277928cf59344b4196af8d9cee1f1a27c">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\tubesock-0.0.11-b3faf75412f93a8751848fc12de57507d99e0b4b.jar" />
-    </item>
-    <item
-        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-e48306943274faf28ad82bf98e47a19a531f9fe3.jar" />
-    </item>
-    <item
-        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="1ccbc26be2c465c622a48310e8092241b01abe80">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes-d04e404e7f9e71273db6bda0ad88bd97fce83877.jar" />
-    </item>
-    <item
-        jar="C:\Users\Adm\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.0-945f4cf84a6dea47f5b42bb3c09471c9495a19cc.jar" />
-    </item>
-    <item
         jar="C:\Users\Adm\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-android\2.3.1\be29b24233711c419ce935aa0a1b12ebc49d1c9a\firebase-client-android-2.3.1.jar"
         jumboMode="false"
         revision="23.0.2"
@@ -72,11 +16,74 @@
         <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes-8b0a9fbd79a1e0f8ccba6235b4a95d684a0c8b26.jar" />
     </item>
     <item
+        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1ccbc26be2c465c622a48310e8092241b01abe80">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes-d04e404e7f9e71273db6bda0ad88bd97fce83877.jar" />
+    </item>
+    <item
+        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\com.mcxiaoke.volley\library-aar\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e40b9a81989bd4a846018551c280f8c4d837bf2e">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes-eb8a16476583cbf0bfc6be73b27f63d634d1f1d2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Adm\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-jvm\2.3.1\4d53b7d6983247af02b8fe7e4228fff555a5e828\firebase-client-jvm-2.3.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4d53b7d6983247af02b8fe7e4228fff555a5e828">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\firebase-client-jvm-2.3.1-3bc1645087cb8216fa79ce79d5d01f504e410463.jar" />
+    </item>
+    <item
+        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-e48306943274faf28ad82bf98e47a19a531f9fe3.jar" />
+    </item>
+    <item
         jar="C:\Users\Adm\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.2.2\3c8f6018eaa72d43b261181e801e6f8676c16ef6\jackson-databind-2.2.2.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
         <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\jackson-databind-2.2.2-0f744f6de6d83a268becd5812a3d8137b1f467e7.jar" />
+    </item>
+    <item
+        jar="C:\Users\Adm\.gradle\caches\modules-2\files-2.1\com.firebase\tubesock\0.0.11\d37cb67277928cf59344b4196af8d9cee1f1a27c\tubesock-0.0.11.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d37cb67277928cf59344b4196af8d9cee1f1a27c">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\tubesock-0.0.11-b3faf75412f93a8751848fc12de57507d99e0b4b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes-9996185bbaa3bd6fb72f136e34a2d14c0f2feb40.jar" />
+    </item>
+    <item
+        jar="C:\Users\Adm\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.2.2\285cb9c666f0f0f3dd8a1be04e1f457eb7b15113\jackson-annotations-2.2.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\jackson-annotations-2.2.2-27ac42b9141691a7fda0abf5585c2bb96681af40.jar" />
+    </item>
+    <item
+        jar="C:\Users\Adm\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.2.2\d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b\jackson-core-2.2.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\jackson-core-2.2.2-8d9ec5a9e171fa7164ecc72c67a7615e28e7c6d4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Adm\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.0-945f4cf84a6dea47f5b42bb3c09471c9495a19cc.jar" />
     </item>
 
 </items>

@@ -5,25 +5,13 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ListView;
+
+import com.firebase.client.Firebase;
 
 public class Services extends Fragment {
 
-    Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10;
     ListView ser_list;
-    int[] buttons = {
-            R.drawable.phone,
-            R.drawable.phone,
-            R.drawable.phone,
-            R.drawable.phone,
-            R.drawable.phone,
-            R.drawable.phone,
-            R.drawable.phone,
-            R.drawable.phone,
-            R.drawable.phone,
-            R.drawable.phone,
-    };
     String[] heading={
             "VIT",
             "Health Centre",
@@ -60,32 +48,33 @@ public class Services extends Fragment {
             R.drawable.dominos,
             R.drawable.papa_johns
     };
+    int[] button = {
+            R.drawable.phone,
+            R.drawable.phone,
+            R.drawable.phone,
+            R.drawable.phone,
+            R.drawable.phone,
+            R.drawable.phone,
+            R.drawable.phone,
+            R.drawable.phone,
+            R.drawable.phone,
+            R.drawable.phone,
+    };
+    int j=0;
 
+    Firebase ref = new Firebase("https://vit-freshers-app.firebaseio.com/");
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.activity_services, container, false);
 
-        final ListAdapterServices adapter = new ListAdapterServices(getActivity(),heading,number,img,buttons);
+        final ListAdapterServices adapter = new ListAdapterServices(getActivity(),heading,number,img,button);
 
         ser_list=(ListView)rootView.findViewById(R.id.list_services);
 
         ser_list.setAdapter(adapter);
 
-        int i=0;
-
-        Button b1=(Button)rootView.findViewById(R.id.ser_button);
-        /*b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent call_1 = new Intent(Intent.ACTION_DIAL);
-                String p = "tel:" + number[1];
-                call_1.setData(Uri.parse(p));
-                startActivity(call_1);
-            }
-        });
-        */
         return rootView;
     }
 

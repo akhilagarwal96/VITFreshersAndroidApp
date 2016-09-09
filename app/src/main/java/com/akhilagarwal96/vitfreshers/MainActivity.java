@@ -42,8 +42,9 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
         setContentView(R.layout.activity_main);
 
 
+
         Firebase.setAndroidContext(this);
-            // other setup code
+        Firebase.getDefaultConfig().setPersistenceEnabled(true);
 
         // Set up the action bar.
         final ActionBar actionBar = getSupportActionBar();

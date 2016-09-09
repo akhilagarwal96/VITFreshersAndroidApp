@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-
 import com.firebase.client.ChildEventListener;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
@@ -15,13 +14,11 @@ import com.firebase.client.FirebaseError;
 public class FAQs extends Fragment{
 
     ListView list1;
-    String[] text1 = new String[20];
-    String[] text2 = new String[20];
+    String[] text1 = new String[6];
+    String[] text2 = new String[6];
     int i=0;
 
-
-
-    Firebase ref = new Firebase("https://vit-freshers.firebaseio.com/");
+    Firebase ref = new Firebase("https://vit-freshers-app.firebaseio.com/");
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -49,19 +46,15 @@ public class FAQs extends Fragment{
 
                     @Override
                     public void onChildAdded(DataSnapshot dataSnapshot2, String s) {
-
-
                         if (index == 1) {
                             String z1 = (String) dataSnapshot2.getValue();
-                            text1[i] = z1;
-
+                            text2[i] = z1;
                         }
                         if (index == 2) {
                             String z2 = (String) dataSnapshot2.getValue();
-                            text2[i] = z2;
-
+                            text1[i] = z2;
+                            i = i + 1;
                         }
-                        i = i + 1;
                         index = index + 1;
 
                     }

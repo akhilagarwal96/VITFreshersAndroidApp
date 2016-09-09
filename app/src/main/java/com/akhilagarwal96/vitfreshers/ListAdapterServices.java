@@ -1,6 +1,8 @@
 package com.akhilagarwal96.vitfreshers;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,36 +17,46 @@ import android.widget.TextView;
  */
 public class ListAdapterServices extends ArrayAdapter {
 
-    public ListAdapterServices(FragmentActivity context, String[] text01, String[] text02, Integer[] imgid01, int[] button01) {
-        super(context, R.layout.services_cards,text01);
+    public ListAdapterServices(FragmentActivity context, String[] heading, String[] number, Integer[] img,int[] button) {
+        super(context, R.layout.services_cards,heading);
 
         this.context=context;
-        this.text01=text01;
-        this.text02=text02;
-        this.imgid01=imgid01;
-        this.button01=button01;
+        this.heading=heading;
+        this.number=number;
+        this.img=img;
+        this.button=button;
     }
 
     private final Activity context;
-    private final String[] text01;
-    private final String[] text02;
-    private final Integer[] imgid01;
-    private final int[] button01;
+    private final String[] heading;
+    private final String[] number;
+    private final Integer[] img;
+    private final int[] button;
 
-    public View getView(int position,View view,ViewGroup parent) {
+    int i = 0;
+    public View getView(final int position,View view,ViewGroup parent) {
         LayoutInflater inflater=context.getLayoutInflater();
         View rowView=inflater.inflate(R.layout.services_cards, null, true);
 
         TextView txtHead = (TextView) rowView.findViewById(R.id.ser_txt1);
         TextView txtNum = (TextView) rowView.findViewById(R.id.ser_txt2);
         ImageView imagView = (ImageView) rowView.findViewById(R.id.ser_img);
-        ImageButton bcall = (ImageButton) rowView.findViewById(R.id.ser_button);
+        ImageButton bcall = (ImageButton) rowView.findViewById(R.id.call_button);
 
-        txtHead.setText(text01[position]);
-        txtNum.setText(text02[position]);
-        imagView.setImageResource(imgid01[position]);
-        bcall.setImageResource(button01[position]);
+        txtHead.setText(heading[position]);
+        txtNum.setText(number[position]);
+        imagView.setImageResource(img[position]);
+        bcall.setImageResource(button[position]);
 
+        bcall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent callIntent = new Intent(Intent.ACTION_CALL);
+                callIntent.setData(Uri.parse("tel:"+ number[position]));
+                context.startActivity(callIntent);
+
+            }
+        });
 
         return rowView;
 

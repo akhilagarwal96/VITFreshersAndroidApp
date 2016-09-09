@@ -21,14 +21,10 @@ public class ListAdapterHome extends ArrayAdapter {
         this.imgid=imgid;
     }
 
-
     private final Activity context;
     private final String[] firstline;
     private final String[] secondline;
     private final Integer[] imgid;
-
-
-
 
     public View getView(int position,View view,ViewGroup parent) {
         LayoutInflater inflater=context.getLayoutInflater();
@@ -42,8 +38,9 @@ public class ListAdapterHome extends ArrayAdapter {
         txtTitle1.setText(secondline[position]);
         imageView.setImageResource(imgid[position]);
 
-        return rowView;
 
+        return rowView;
     };
+
 }
 

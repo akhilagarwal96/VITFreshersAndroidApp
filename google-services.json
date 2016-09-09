@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "257875320362",
+    "firebase_url": "https://vit-freshers-app.firebaseio.com",
+    "project_id": "vit-freshers-app",
+    "storage_bucket": "vit-freshers-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257875320362:android:9974bfdb1f8f6dcd",
+        "android_client_info": {
+          "package_name": "com.akhilagarwal96.vitfreshers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257875320362-nguuj9m42ss7dt4go4lqvb9ncnshqtoe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGxRoPHo6CpJOGXE3mcaUe2_GO6WjnNmQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

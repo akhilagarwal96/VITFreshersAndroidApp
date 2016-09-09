@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
@@ -15,32 +16,29 @@
         android:id="@+id/ser_txt1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@+id/ser_img"
         android:textColor="@color/white"
-        android:gravity="center"
-        android:paddingTop="10dp"
-        android:layout_alignParentTop="true" />
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/call_button"/>
 
     <TextView
         android:id="@+id/ser_txt2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@+id/ser_img"
         android:textColor="@color/white"
         android:layout_below="@+id/ser_txt1"
-        android:layout_alignStart="@+id/ser_txt1"
-        android:gravity="center"/>
-
+        android:layout_toLeftOf="@+id/call_button"
+        android:gravity="center_horizontal"/>
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ser_button"
-        android:layout_alignBottom="@+id/ser_txt2"
-        android:layout_alignParentEnd="true"
+        android:id="@+id/call_button"
+        android:src="@drawable/phone"
+        android:background="@android:color/transparent"
         android:layout_alignParentTop="true"
-        android:background="@drawable/phone"/>
-
-
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
 

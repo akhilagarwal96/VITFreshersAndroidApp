@@ -1,6 +1,7 @@
 package com.akhilagarwal96.vitfreshers;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,15 +38,16 @@ public class Home extends Fragment {
 
     };
 
-
+    Handler handler = new Handler();
+    Runnable refresh;
 
     TextView txt1;
-    Firebase ref = new Firebase("https://vit-freshers.firebaseio.com/");
+    Firebase ref = new Firebase("https://vit-freshers-app.firebaseio.com/");
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.activity_home, container, false);
+        final View rootView = inflater.inflate(R.layout.activity_home, container, false);
 
         final ListAdapterHome adapter = new ListAdapterHome(getActivity(),firstline,secondline,imgid);
 
@@ -54,7 +56,6 @@ public class Home extends Fragment {
         list.setAdapter(adapter);
 
         txt1 = (TextView) rootView.findViewById(R.id.textView3);
-
 
         ref.child("Title/Title For Calendar").addValueEventListener(new ValueEventListener() {
             @Override
@@ -68,7 +69,6 @@ public class Home extends Fragment {
             public void onCancelled(FirebaseError firebaseError) {
             }
         });
-
         ref.child("Calendar/Data/Beginning").addValueEventListener(new ValueEventListener() {
                     @Override
 
@@ -117,7 +117,7 @@ public class Home extends Fragment {
 
             public void onDataChange(DataSnapshot snapshot) {
                 String y4 = (String) snapshot.getValue();
-                secondline[3]=y4;
+                secondline[3] = y4;
             }
 
             @Override
@@ -159,7 +159,7 @@ public class Home extends Fragment {
 
             public void onDataChange(DataSnapshot snapshot) {
                 String y7 = (String) snapshot.getValue();
-                secondline[6]=y7;
+                secondline[6] = y7;
 
             }
 
@@ -170,7 +170,12 @@ public class Home extends Fragment {
 
         });
 
-
+        /*refresh = new Runnable() {
+            @Override
+            public void run() {
+                handler.postDelayed(refresh,5000);
+            }
+        };*/
         return rootView;
     }
 }

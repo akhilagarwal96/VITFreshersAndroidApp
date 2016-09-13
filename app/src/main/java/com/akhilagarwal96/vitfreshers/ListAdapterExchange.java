@@ -40,14 +40,12 @@ Button sell;
         Number.setText(text3[position]);
         Product.setText(text4[position]);
 
-        sell = (Button) Product.findViewById(R.id.sell_button);
-/*
-        sell.setOnClickListener(new View.OnClickListener() {
+        sell = (Button) Product.findViewById(R.id.buy_button);
+
+        /*sell.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i_sell = new Intent(this, Home.class);
-
-                startActivity(i_sell);
+                Intent intent_buy = new Intent(this,)
             }
         });
 */

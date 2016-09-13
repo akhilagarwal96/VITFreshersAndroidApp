@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.firebase.client.ChildEventListener;
@@ -14,6 +15,7 @@ import com.firebase.client.FirebaseError;
 
 public class Resale extends Fragment{
 
+    Button b1;
     ListView ex_list,add_pro_list;
     int i=0;
     String[] text1 = new String[10];
@@ -40,6 +42,20 @@ public class Resale extends Fragment{
 
         ex_list.setAdapter(adapter_ex);
 
+        /*b1 = (Button) rootView.findViewById(R.id.sell_button);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ListAdapterAddProduct adapter_add = new ListAdapterAddProduct(getActivity(), txt_name, txt_room, txt_phone, txt_desc);
+
+                add_pro_list = (ListView) rootView.findViewById(R.id.list_add);
+
+                add_pro_list.setAdapter(adapter_add);
+
+                Intent i_sell = new Intent(Resale.class,AddProduct.class);
+                startActivity(i_sell);
+            }
+        });*/
         /*ListAdapterAddProduct adapter_add = new ListAdapterAddProduct(getActivity(), txt_name, txt_room, txt_phone, txt_desc);
 
         add_pro_list = (ListView) rootView.findViewById(R.id.list_add);

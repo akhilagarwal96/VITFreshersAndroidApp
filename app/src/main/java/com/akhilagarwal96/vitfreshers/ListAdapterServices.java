@@ -52,9 +52,8 @@ public class ListAdapterServices extends ArrayAdapter {
             @Override
             public void onClick(View v) {
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.setData(Uri.parse("tel:"+ number[position]));
+                callIntent.setData(Uri.parse("tel:" + number[position]));
                 context.startActivity(callIntent);
-
             }
         });
 

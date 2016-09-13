@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
     SectionsPagerAdapter mSectionsPagerAdapter;
     ViewPager mViewPager;
 
+    private int[] resid={R.drawable.home,R.drawable.shoppingcart,R.drawable.faq,R.drawable.feedback};
+
     /**
      * The {@link ViewPager} that will host the section contents.
      */
@@ -80,6 +82,7 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
                             .setText(mSectionsPagerAdapter.getPageTitle(i))
                             .setTabListener(this));
         }
+
     }
 
     @Override

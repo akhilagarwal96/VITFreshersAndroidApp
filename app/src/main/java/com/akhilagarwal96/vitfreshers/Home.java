@@ -1,7 +1,6 @@
 package com.akhilagarwal96.vitfreshers;
 
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,25 +36,19 @@ public class Home extends Fragment {
             R.drawable.timeline,
 
     };
+/*
 
     Handler handler = new Handler();
     Runnable refresh;
 
+*/
     TextView txt1;
     Firebase ref = new Firebase("https://vit-freshers-app.firebaseio.com/");
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        final View rootView = inflater.inflate(R.layout.activity_home, container, false);
 
-        final ListAdapterHome adapter = new ListAdapterHome(getActivity(),firstline,secondline,imgid);
-
-        list=(ListView)rootView.findViewById(R.id.list_home);
-
-        list.setAdapter(adapter);
-
-        txt1 = (TextView) rootView.findViewById(R.id.textView3);
 
         ref.child("Title/Title For Calendar").addValueEventListener(new ValueEventListener() {
             @Override
@@ -175,7 +168,18 @@ public class Home extends Fragment {
             public void run() {
                 handler.postDelayed(refresh,5000);
             }
-        };*/
+
+       };*/
+        final View rootView = inflater.inflate(R.layout.activity_home, container, false);
+
+        final ListAdapterHome adapter = new ListAdapterHome(getActivity(),firstline,secondline,imgid);
+
+        list=(ListView)rootView.findViewById(R.id.list_home);
+
+        list.setAdapter(adapter);
+
+        txt1 = (TextView) rootView.findViewById(R.id.textView3);
+
         return rootView;
     }
 }

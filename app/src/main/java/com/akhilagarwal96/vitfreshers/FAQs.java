@@ -6,17 +6,31 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import com.firebase.client.ChildEventListener;
-import com.firebase.client.DataSnapshot;
+
 import com.firebase.client.Firebase;
-import com.firebase.client.FirebaseError;
 
 public class FAQs extends Fragment{
 
     ListView list1;
-    String[] text1 = new String[6];
-    String[] text2 = new String[6];
+    String[] text1 = {
+            "What is FFCS?",
+            "What are the attendance constraints?",
+            "How and When do I need to apply for a leave?",
+            "How can I access the Library after 9 pm?",
+            "What is the procedure for mess change?",
+            "What is the procedure to register for Physical Education?"
+    };
+    String[] text2 = {
+            "FFCS is \"Fully Flexible Credit System\". Each course you take under FFCS has a fixed credit number. You need to complete 180 credits in total to attain a B.Tech degree.",
+            "A minimum of 75% attendance is required in theory classes to attend all exams. Also, if you miss a Lab, only 75% of that day's assignment marks will be considered.",
+            "A leave is required when you are out of campus for more than a night. You can send an online request to your FA directly through Student Login.",
+            "Freshers (Men) are not allowed inside the library after 9 pm until and unless they have a signed permission from their Faculty Advisor.",
+            "Mess can be changed once a month by paying the difference online or by DD. Mess change link is usually available in Student Login during the last week of every month.",
+            "VIT offers a great number of Physical Education facilities including Squash, Swimming, Badminton, Gym and more. Registration to any of these can be done online through the Student Login."
+    };
     int i=0;
+
+
 
     Firebase ref = new Firebase("https://vit-freshers-app.firebaseio.com/");
 
@@ -32,7 +46,7 @@ public class FAQs extends Fragment{
         list1.setAdapter(adapter1);
 
 
-        ref.child("FAQ").addChildEventListener(new ChildEventListener() {
+     /*  ref.child("FAQ").addChildEventListener(new ChildEventListener() {
 
 
             @Override
@@ -46,9 +60,12 @@ public class FAQs extends Fragment{
 
                     @Override
                     public void onChildAdded(DataSnapshot dataSnapshot2, String s) {
+
+
                         if (index == 1) {
                             String z1 = (String) dataSnapshot2.getValue();
                             text2[i] = z1;
+
                         }
                         if (index == 2) {
                             String z2 = (String) dataSnapshot2.getValue();
@@ -102,6 +119,6 @@ public class FAQs extends Fragment{
 
             }
         });
-        return rootView;
+     */   return rootView;
     }
 }

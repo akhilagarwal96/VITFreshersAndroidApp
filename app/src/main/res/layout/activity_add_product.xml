@@ -5,6 +5,7 @@
     android:paddingLeft="@dimen/activity_vertical_margin"
     tools:context="com.akhilagarwal96.vitfreshers.AddProduct">
 
+
     <ImageButton
         android:layout_width="80dp"
         android:layout_height="30dp"
@@ -65,5 +66,6 @@
         android:gravity="center"
         android:layout_below="@+id/sell_description"
         android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>

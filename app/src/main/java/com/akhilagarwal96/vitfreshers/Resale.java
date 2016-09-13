@@ -14,13 +14,17 @@ import com.firebase.client.FirebaseError;
 
 public class Resale extends Fragment{
 
-    ListView ex_list;
+    ListView ex_list,add_pro_list;
     int i=0;
     String[] text1 = new String[10];
     String[] text2 = new String[10];
     String[] text3 = new String[10];
     String[] text4 = new String[10];
 
+    String txt_name;
+    String txt_room;
+    String txt_phone;
+    String txt_desc;
 
     Firebase ref = new Firebase("https://vit-freshers-app.firebaseio.com/");
 
@@ -35,6 +39,12 @@ public class Resale extends Fragment{
         ex_list = (ListView)rootView.findViewById(R.id.list_ex);
 
         ex_list.setAdapter(adapter_ex);
+
+        /*ListAdapterAddProduct adapter_add = new ListAdapterAddProduct(getActivity(), txt_name, txt_room, txt_phone, txt_desc);
+
+        add_pro_list = (ListView) rootView.findViewById(R.id.list_add);
+
+        add_pro_list.setAdapter(adapter_add);*/
 
         ref.child("Products").addChildEventListener(new ChildEventListener() {
             @Override

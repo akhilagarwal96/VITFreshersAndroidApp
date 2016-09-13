@@ -5,10 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 
 class ListAdapterExchange extends ArrayAdapter{
-
+Button sell;
     public ListAdapterExchange(Activity context, String[] text1, String[] text2,String[] text3,String[] text4){
         super(context,R.layout.resale_cards,text1);
 
@@ -39,6 +40,17 @@ class ListAdapterExchange extends ArrayAdapter{
         Number.setText(text3[position]);
         Product.setText(text4[position]);
 
+        sell = (Button) Product.findViewById(R.id.sell_button);
+/*
+        sell.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i_sell = new Intent(this, Home.class);
+
+                startActivity(i_sell);
+            }
+        });
+*/
         return rowView;
 
     };

@@ -10,11 +10,15 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.firebase.client.Firebase;
+
 public class AddProduct extends Fragment {
 
     Button submit,resale_home;
     EditText name,location,number,desc;
     String n,l,no,d;
+
+    Firebase ref = new Firebase("https://vit-freshers-app.firebaseio.com/");
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -48,6 +52,9 @@ public class AddProduct extends Fragment {
                     });
                 }
                 else {
+
+                    //ref.child("Products").setValue("Do you have data? You'll love Firebase.");
+
                     AlertDialog submitted = new AlertDialog.Builder(getContext()).create();
                     submitted.setTitle("Submitted!");
                     submitted.setMessage("Your product has been successfully added");

@@ -4,25 +4,13 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bcgd">
+    android:background="@drawable/bcgd" >
 
     <ImageView
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:src="@drawable/akhil"
-        android:id="@+id/developer1"
-        android:layout_marginLeft="50dp"
-        android:layout_alignTop="@+id/developer2"/>
-
-    <ImageView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@drawable/tanmay1"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="30dp"
-        android:layout_toRightOf="@+id/developer1"
-        android:layout_marginTop="50dp"
-        android:id="@+id/developer2" />
+        android:id="@+id/developer" />
 
     <ImageView
         android:layout_width="165dp"
@@ -40,21 +28,9 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Akhil Agarwal"
         android:textColor="@color/white"
-        android:id="@+id/name_dev1"
-        android:layout_below="@+id/developer1"
-        android:layout_alignEnd="@+id/developer1" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Tanmay Jha"
-        android:textColor="@color/white"
-        android:id="@+id/name_dev2"
-        android:layout_centerVertical="true"
-        android:layout_below="@+id/developer2"
-        android:layout_alignEnd="@+id/developer2"
-        android:layout_alignTop="@+id/name_dev1" />
+        android:id="@+id/name_dev"
+        android:layout_below="@+id/developer"
+        android:layout_alignEnd="@+id/developer" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -62,18 +38,8 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Developer"
         android:textColor="@color/white"
-        android:id="@+id/pos_dev1"
-        android:layout_below="@+id/name_dev1"
-        android:layout_alignStart="@+id/name_dev1"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Developer"
-        android:textColor="@color/white"
-        android:id="@+id/pos_dev2"
-        android:layout_below="@+id/name_dev2"
-        android:layout_alignStart="@+id/name_dev2"/>
+        android:id="@+id/pos_dev"
+        android:layout_below="@+id/name_dev"
+        android:layout_alignStart="@+id/name_dev"/>
 
 </RelativeLayout>

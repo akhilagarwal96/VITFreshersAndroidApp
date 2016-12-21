@@ -39,7 +39,7 @@ public class FAQs extends Fragment{
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.activity_faqs, container, false);
 
-        ListAdapterFAQ adapter1 = new ListAdapterFAQ(getActivity(),text1,text2);
+        AdapterFAQ adapter1 = new AdapterFAQ(getActivity(),text1,text2);
 
         list1 = (ListView)rootView.findViewById(R.id.list_faq);
 

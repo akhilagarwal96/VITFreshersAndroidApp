@@ -1,6 +1,7 @@
 package com.akhilagarwal96.vitfreshers;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -47,6 +48,8 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
         // Set up the action bar.
         final ActionBar actionBar = getSupportActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+
+        mViewPager.setBackgroundColor(Color.parseColor("#C35817"));
 
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
@@ -107,21 +110,24 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
         return super.onOptionsItemSelected(item);
     }
 
-
-
     @Override
     public void onTabSelected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
         // When the given tab is selected, switch to the corresponding page in
         // the ViewPager.
         mViewPager.setCurrentItem(tab.getPosition());
+        mViewPager.setBackgroundColor(Color.parseColor("#C35817"));
     }
 
     @Override
     public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
+
+        mViewPager.setBackgroundColor(Color.parseColor("#C35817"));
     }
 
     @Override
     public void onTabReselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
+
+        mViewPager.setBackgroundColor(Color.parseColor("#C35817"));
     }
 
     public void dev_clicked(MenuItem item) {
@@ -212,6 +218,5 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
 
 
     }
-
 
 }

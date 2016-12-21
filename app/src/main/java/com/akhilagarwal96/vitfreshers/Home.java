@@ -36,12 +36,7 @@ public class Home extends Fragment {
             R.drawable.timeline,
 
     };
-/*
 
-    Handler handler = new Handler();
-    Runnable refresh;
-
-*/
     TextView txt1;
     Firebase ref = new Firebase("https://vit-freshers-app.firebaseio.com/");
 
@@ -49,6 +44,15 @@ public class Home extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        final View rootView = inflater.inflate(R.layout.activity_home, container, false);
+
+        final AdapterHome adapter = new AdapterHome(getActivity(),firstline,secondline,imgid);
+
+        list=(ListView)rootView.findViewById(R.id.list_home);
+
+        list.setAdapter(adapter);
+
+        txt1 = (TextView) rootView.findViewById(R.id.Calendar_Heading);
 
         ref.child("Title/Title For Calendar").addValueEventListener(new ValueEventListener() {
             @Override
@@ -62,6 +66,7 @@ public class Home extends Fragment {
             public void onCancelled(FirebaseError firebaseError) {
             }
         });
+
         ref.child("Calendar/Data/Beginning").addValueEventListener(new ValueEventListener() {
                     @Override
 
@@ -138,7 +143,7 @@ public class Home extends Fragment {
 
             public void onDataChange(DataSnapshot snapshot) {
                 String y6 = (String) snapshot.getValue();
-                secondline[5]=y6;
+                secondline[5] = y6;
             }
 
             @Override
@@ -170,15 +175,6 @@ public class Home extends Fragment {
             }
 
        };*/
-        final View rootView = inflater.inflate(R.layout.activity_home, container, false);
-
-        final ListAdapterHome adapter = new ListAdapterHome(getActivity(),firstline,secondline,imgid);
-
-        list=(ListView)rootView.findViewById(R.id.list_home);
-
-        list.setAdapter(adapter);
-
-        txt1 = (TextView) rootView.findViewById(R.id.textView3);
 
         return rootView;
     }

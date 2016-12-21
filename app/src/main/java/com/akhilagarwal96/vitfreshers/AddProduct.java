@@ -1,24 +1,41 @@
+
 package com.akhilagarwal96.vitfreshers;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.EditText;
 
 import com.firebase.client.Firebase;
 
-public class AddProduct extends Fragment {
+public class AddProduct extends AppCompatActivity{
 
+    Firebase ref = new Firebase("https://vit-freshers-app.firebaseio.com/");
+
+    EditText name,location,number,desc;
+    Button submit;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_add_product);
+
+        name = (EditText) findViewById(R.id.sell_name);
+        location = (EditText) findViewById(R.id.sell_location);
+        number = (EditText) findViewById(R.id.sell_number);
+        desc = (EditText) findViewById(R.id.sell_description);
+
+        submit = (Button) findViewById(R.id.sell_submit);
+
+    }
+}
+/*
+    private RelativeLayout layout_buy;
     Button submit,resale_home;
     EditText name,location,number,desc;
     String n,l,no,d;
 
-    Firebase ref = new Firebase("https://vit-freshers-app.firebaseio.com/");
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -69,16 +86,16 @@ public class AddProduct extends Fragment {
             }
         });
 
+        layout_buy = (RelativeLayout) rootView.findViewById(R.id.sell_cards);
         resale_home = (Button) rootView.findViewById(R.id.sell_button);
         resale_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent ex_home = new Intent(this,Resale.class);
-
+               layout_buy.setVisibility(RelativeLayout.VISIBLE);
             }
         });
         return rootView;
     }
 
 
-}
+}*/

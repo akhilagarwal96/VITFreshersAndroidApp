@@ -3,13 +3,16 @@
     android:layout_height="match_parent"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_vertical_margin"
-    tools:context="com.akhilagarwal96.vitfreshers.AddProduct">
+    android:id="@+id/add_pro"
+    tools:context="com.akhilagarwal96.vitfreshers.AddProduct"
+    android:background="@drawable/bcgd">
 
 
     <ImageButton
         android:layout_width="80dp"
         android:layout_height="30dp"
         android:id="@+id/buy_button"
+        android:visibility="visible"
         android:background="@drawable/buy"/>
 
     <EditText

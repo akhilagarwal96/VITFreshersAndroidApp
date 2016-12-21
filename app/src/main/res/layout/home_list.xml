@@ -12,18 +12,19 @@
             android:layout_marginLeft="10dp"
             android:contentDescription="TODO"
             android:src="@drawable/timeline"/>
+
         <View
+            android:id="@+id/timeline_view"
             android:layout_width="2dp"
             android:layout_height="125dp"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="49dp"
             android:background="@color/white"/>
 
         <TextView
             android:id="@+id/first"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignWithParentIfMissing="true"
             android:textColor="@color/white"
             android:gravity="center"
             android:paddingTop="36dp"
@@ -34,14 +35,10 @@
           android:id="@+id/second"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignWithParentIfMissing="true"
-            android:textSize="16dp"
             android:textColor="@color/white"
             android:layout_below="@+id/first"
             android:layout_alignStart="@+id/first"
             android:gravity="center"/>
-
-
 
 </RelativeLayout>
 

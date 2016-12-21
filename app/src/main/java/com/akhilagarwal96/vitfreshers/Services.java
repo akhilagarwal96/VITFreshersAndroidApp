@@ -69,7 +69,7 @@ public class Services extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.activity_services, container, false);
 
-        final ListAdapterServices adapter = new ListAdapterServices(getActivity(),heading,number,img,button);
+        final AdapterServices adapter = new AdapterServices(getActivity(),heading,number,img,button);
 
         ser_list=(ListView)rootView.findViewById(R.id.list_services);
 

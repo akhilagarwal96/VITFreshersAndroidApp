@@ -188,28 +188,11 @@ public class Resale extends Fragment {
                 p = Phone.getText().toString();
                 d = Desc.getText().toString();
 
-
-            /*
-
-            submit.setOnClickListener(new View.OnClickListener() {
+                submit.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
 
-                    private void writeNewPost(String n, String r, String p, String d) {
-                // Create new post at /user-posts/$userid/$postid and at
-                // /posts/$postid simultaneously
-                String key = ref.child("Products").push().getKey();
-*//*                  Post post = new Post(n,r,p,d);
-                    Map<String, Object> postValues = post.toMap();
-
-                    Map<String, Object> childUpdates = new HashMap<>();
-                    childUpdates.put("/posts/" + key, postValues);
-                    childUpdates.put("/user-posts/" + userId + "/" + key, postValues);
-
-                    ref.updateChildren(childUpdates);
- *//*
-            }*/
-                /*
+            /*
                         if (n == "" || l == "" || no == "" || d == "") {
                             AlertDialog empty = new AlertDialog.Builder(getContext()).create();
                             empty.setTitle("Oops! Your product cannot be added");
@@ -222,8 +205,6 @@ public class Resale extends Fragment {
                             });
                         }
                         else {
-
-                            //ref.child("Products").setValue("Do you have data? You'll love Firebase.");
 
                             AlertDialog submitted = new AlertDialog.Builder(getContext()).create();
                             submitted.setTitle("Submitted!");
@@ -238,17 +219,20 @@ public class Resale extends Fragment {
                             submitted.show();
                         }
                     }
-                });*/
+                });
+            */
 
-                buy = (ImageButton) rootView.findViewById(R.id.buy_button);
-                buy.setOnClickListener(new View.OnClickListener()
+                        buy = (ImageButton) rootView.findViewById(R.id.buy_button);
+                        buy.setOnClickListener(new View.OnClickListener()
 
-                {
-                    @Override
-                    public void onClick(View v) {
-                        Intent back = new Intent(getActivity(), Resale.class);
-                        startActivity(back);
-                        return;
+                        {
+                            @Override
+                            public void onClick(View v) {
+                                Intent back = new Intent(getActivity(), Resale.class);
+                                startActivity(back);
+                                return;
+                            }
+                        });
                     }
                 });
             }
@@ -257,3 +241,4 @@ public class Resale extends Fragment {
         return rootView;
     }
 }
+

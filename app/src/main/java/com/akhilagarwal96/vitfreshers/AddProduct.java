@@ -6,11 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.firebase.client.Firebase;
-
 public class AddProduct extends AppCompatActivity{
 
-    Firebase ref = new Firebase("https://vit-freshers-app.firebaseio.com/");
+  //  Firebase ref = new Firebase("https://vit-freshers-app.firebaseio.com/");
 
     EditText name,location,number,desc;
     Button submit;

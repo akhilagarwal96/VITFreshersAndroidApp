@@ -51,7 +51,6 @@ public class Home extends Fragment {
         list=(ListView)rootView.findViewById(R.id.list_home);
 
         list.setAdapter(adapter);
-
         txt1 = (TextView) rootView.findViewById(R.id.Calendar_Heading);
 
         ref.child("Title/Title For Calendar").addValueEventListener(new ValueEventListener() {

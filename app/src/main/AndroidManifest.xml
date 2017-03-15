@@ -46,7 +46,7 @@
             android:windowSoftInputMode="adjustResize|adjustPan" >
         </activity>
         <activity
-            android:name=".Info"
+            android:name=".DevPage"
             android:label="@string/title_activity_info" >
         </activity>
         <activity

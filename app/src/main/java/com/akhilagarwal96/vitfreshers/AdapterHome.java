@@ -1,13 +1,13 @@
 package com.akhilagarwal96.vitfreshers;
 
-import android.app.Activity;
-import android.support.v4.app.FragmentActivity;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
-import android.widget.TextView;
+        import android.app.Activity;
+        import android.support.v4.app.FragmentActivity;
+        import android.view.LayoutInflater;
+        import android.view.View;
+        import android.view.ViewGroup;
+        import android.widget.ArrayAdapter;
+        import android.widget.ImageView;
+        import android.widget.TextView;
 
 public class AdapterHome extends ArrayAdapter {
 
@@ -42,4 +42,45 @@ public class AdapterHome extends ArrayAdapter {
     };
 
 }
+/*
+package com.akhilagarwal96.vitfreshers;
 
+public class AdapterHome {
+    private String firstline,secondline;
+    private Integer imgid;
+
+    public AdapterHome() {
+    }
+
+    public AdapterHome(String firstline, String secondline, Integer imgid){
+        this.firstline=firstline;
+        this.secondline=secondline;
+        this.imgid=imgid;
+    }
+
+    public String getFirstline(){
+        return firstline;
+    }
+
+    public void setFirstline(String holiday){
+        this.firstline = holiday;
+    }
+
+    public String getSecondline(){
+        return secondline;
+    }
+
+    public void setSecondline(String date){
+        this.secondline = date;
+    }
+
+    public Integer getImgid(){
+        return imgid;
+    }
+
+    public void setImgid(Integer timeline){
+        this.imgid = timeline;
+    }
+}
+
+*/

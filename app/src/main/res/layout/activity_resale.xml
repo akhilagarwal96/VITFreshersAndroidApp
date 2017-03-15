@@ -13,11 +13,20 @@
         android:background="@drawable/sell"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true" />
-
+<!--
     <ListView
         android:id="@+id/list_ex"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/sell_button"/>
+-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sell_button"
+        android:layout_marginTop="10dp">
+
+    </android.support.v7.widget.RecyclerView>
 
 </RelativeLayout>

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "257875320362-memlq115vn9iip708p69rbe9p9n1jmai.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.akhilagarwal96.vitfreshers",
+            "certificate_hash": "47322f9a188a0364beebc26892b692e01f103b5e"
+          }
+        },
+        {
           "client_id": "257875320362-nguuj9m42ss7dt4go4lqvb9ncnshqtoe.apps.googleusercontent.com",
           "client_type": 3
         }

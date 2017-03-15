@@ -1,7 +1,6 @@
 package com.akhilagarwal96.vitfreshers;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -14,42 +13,27 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.firebase.client.Firebase;
-
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements ActionBar.TabListener{
 
-    /**
-     * The {@link android.support.v4.view.PagerAdapter} that will provide
-     * fragments for each of the sections. We use a
-     * {@link FragmentPagerAdapter} derivative, which will keep every
-     * loaded fragment in memory. If this becomes too memory intensive, it
-     * may be best to switch to a
-     * {@link android.support.v4.app.FragmentStatePagerAdapter}.
-     */
     SectionsPagerAdapter mSectionsPagerAdapter;
     ViewPager mViewPager;
 
-    private int[] resid={R.drawable.home,R.drawable.shoppingcart,R.drawable.faq,R.drawable.feedback};
-
-    /**
-     * The {@link ViewPager} that will host the section contents.
-     */
+    private int[] resid = {R.drawable.home,R.drawable.call,R.drawable.shoppingcart,R.drawable.faq,R.drawable.feedback};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+/*
         Firebase.setAndroidContext(this);
         Firebase.getDefaultConfig().setPersistenceEnabled(true);
+*/
 
-        // Set up the action bar.
         final ActionBar actionBar = getSupportActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-
-        mViewPager.setBackgroundColor(Color.parseColor("#C35817"));
 
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
@@ -69,8 +53,6 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
             }
         });
 
-
-
         // For each of the sections in the app, add a tab to the action bar.
         for (int i = 0; i < mSectionsPagerAdapter.getCount(); i++) {
             // Create a tab with text corresponding to the page phone defined by
@@ -82,7 +64,6 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
                             .setText(mSectionsPagerAdapter.getPageTitle(i))
                             .setTabListener(this));
         }
-
     }
 
     @Override
@@ -101,12 +82,10 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
 
         switch (item.getItemId()){
             case R.id.action_developers:
-                Intent intent1 = new Intent(this,Info.class);
+                Intent intent1 = new Intent(this,DevPage.class);
                 startActivity(intent1);
                 return true;
        }
-
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -115,23 +94,20 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
         // When the given tab is selected, switch to the corresponding page in
         // the ViewPager.
         mViewPager.setCurrentItem(tab.getPosition());
-        mViewPager.setBackgroundColor(Color.parseColor("#C35817"));
     }
 
     @Override
     public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
 
-        mViewPager.setBackgroundColor(Color.parseColor("#C35817"));
     }
 
     @Override
     public void onTabReselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
 
-        mViewPager.setBackgroundColor(Color.parseColor("#C35817"));
     }
 
     public void dev_clicked(MenuItem item) {
-        Intent intent1 = new Intent(this, Info.class);
+        Intent intent1 = new Intent(this, DevPage.class);
         this.startActivity(intent1);
     }
 
@@ -144,7 +120,6 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
         public SectionsPagerAdapter(FragmentManager fm) {
             super(fm);
         }
-
 
         @Override
         public Fragment getItem(int position) {
@@ -190,7 +165,6 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
             return null;
         }
     }
-
     /**
      * A placeholder fragment containing a simple view.
      */
@@ -200,7 +174,6 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
          * fragment.
          */
         private static final String ARG_SECTION_NUMBER = "section_number";
-
         /**
          * Returns a new instance of this fragment for the given section
          * number.
@@ -212,11 +185,7 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
             fragment.setArguments(args);
             return fragment;
         }
-
         public PlaceholderFragment() {
         }
-
-
     }
-
 }

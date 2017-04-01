@@ -2,7 +2,9 @@ package com.akhilagarwal96.vitfreshers;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,13 +20,13 @@ import android.widget.TextView;
 public class AdapterServices extends ArrayAdapter {
 
     public AdapterServices(FragmentActivity context, String[] heading, String[] number, Integer[] img, int[] button) {
-        super(context, R.layout.services_cards,heading);
+        super(context, R.layout.services_cards, heading);
 
-        this.context=context;
-        this.heading=heading;
-        this.number=number;
-        this.img=img;
-        this.button=button;
+        this.context = context;
+        this.heading = heading;
+        this.number = number;
+        this.img = img;
+        this.button = button;
     }
 
     private final Activity context;
@@ -34,10 +36,11 @@ public class AdapterServices extends ArrayAdapter {
     private final int[] button;
 
     int i = 0;
-    public View getView(final int position,View view,ViewGroup parent) {
 
-        LayoutInflater inflater=context.getLayoutInflater();
-        View rowView=inflater.inflate(R.layout.services_cards, null, true);
+    public View getView(final int position, View view, ViewGroup parent) {
+
+        LayoutInflater inflater = context.getLayoutInflater();
+        View rowView = inflater.inflate(R.layout.services_cards, null, true);
 
         TextView txtHead = (TextView) rowView.findViewById(R.id.ser_txt1);
         TextView txtNum = (TextView) rowView.findViewById(R.id.ser_txt2);
@@ -54,6 +57,16 @@ public class AdapterServices extends ArrayAdapter {
             public void onClick(View v) {
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
                 callIntent.setData(Uri.parse("tel:" + number[position]));
+                if (ActivityCompat.checkSelfPermission(getContext(), android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    // TODO: Consider calling
+                    //    ActivityCompat#requestPermissions
+                    // here to request the missing permissions, and then overriding
+                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                    //                                          int[] grantResults)
+                    // to handle the case where the user grants the permission. See the documentation
+                    // for ActivityCompat#requestPermissions for more details.
+                    return;
+                }
                 context.startActivity(callIntent);
             }
         });

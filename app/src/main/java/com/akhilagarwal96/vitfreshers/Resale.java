@@ -4,18 +4,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
-import java.util.Date;
+import java.util.ArrayList;
 
 public class Resale extends Fragment {
 
@@ -27,18 +29,14 @@ public class Resale extends Fragment {
     ListView ex_list, add_pro_list;
     int i = 0;
 
-    String[] E_name,E_room,E_phone,E_desc;
-    EditText Name, Room, Phone, Desc;
-    String n, r, p, d;
-
-    Date date = new Date();
-
-    Button submit;
-
-    //Firebase ref = new Firebase("https://vit-freshers-app.firebaseio.com/");
+    String[] E_name = {"a","c"};
+    String[] E_room = {"a","c"};
+    String[] E_phone = {"a","c"};
+    String[] E_desc = {"a","c"};
+    ArrayList<DataProviderExchange> arrayList = new ArrayList<DataProviderExchange>();
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
 
 
@@ -48,9 +46,23 @@ public class Resale extends Fragment {
 
         recyclerView = (RecyclerView) rootView.findViewById(R.id.rv_buy);
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        int i = 0;
+
+        final FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference databaseReference = database.getReference("Products/");
 
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String x = "Products/" + dataSnapshot.getKey();
+                Log.d("qwerty",x);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
 /*
         databaseReference.child("Products").addValueEventListener(new ValueEventListener() {
             @Override
@@ -109,44 +121,6 @@ public class Resale extends Fragment {
                 Intent sell_intent = new Intent(Resale.this.getActivity(), AddProduct.class);
                 startActivity(sell_intent);
 
-                submit = (Button) rootView1.findViewById(R.id.sell_submit);
-
-                EditText Name = (EditText) rootView1.findViewById(R.id.sell_name);
-                EditText Room = (EditText) rootView1.findViewById(R.id.sell_location);
-                EditText Phone = (EditText) rootView1.findViewById(R.id.sell_number);
-                EditText Desc = (EditText) rootView1.findViewById(R.id.sell_description);
-
-                n = Name.getText().toString();
-                r = Room.getText().toString();
-                p = Phone.getText().toString();
-                d = Desc.getText().toString();
-
-                final DatabaseReference newProduct = databaseReference.push();
-
-                submit.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-
-                        newProduct.child("Date").setValue(date.getTime());
-
-                        newProduct.child("Date").child("Name").setValue(n);
-                        newProduct.child("Date").child("Location").setValue(r);
-                        newProduct.child("Date").child("Phone").setValue(p);
-                        newProduct.child("Date").child("Description").setValue(d);
-
-                        buy = (ImageButton) rootView1.findViewById(R.id.buy_button);
-                        buy.setOnClickListener(new View.OnClickListener()
-
-                        {
-                            @Override
-                            public void onClick(View v) {
-                                Intent back = new Intent(getActivity(), Resale.class);
-                                startActivity(back);
-                                return;
-                            }
-                        });
-                    }
-                });
             }
         });
         return rootView;

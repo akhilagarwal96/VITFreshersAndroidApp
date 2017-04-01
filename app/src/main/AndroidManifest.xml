@@ -38,13 +38,14 @@
         </activity>
         <activity
             android:name=".Services"
-            android:label="@string/title_activity_services" >
+            android:label="@string/title_activity_services"
+            android:windowSoftInputMode="adjustPan|adjustResize">
         </activity>
         <activity
             android:name=".Feedback"
             android:label="@string/title_activity_feedback"
-            android:windowSoftInputMode="adjustResize|adjustPan" >
-        </activity>
+            android:windowSoftInputMode="adjustPan|adjustResize">
+        </activity>>
         <activity
             android:name=".DevPage"
             android:label="@string/title_activity_info" >

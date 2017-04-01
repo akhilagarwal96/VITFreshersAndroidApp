@@ -13,7 +13,6 @@ public class AdapterHome extends ArrayAdapter {
 
     public AdapterHome(FragmentActivity context, String[] firstline, String[] secondline, Integer[] imgid) {
         super(context, R.layout.home_list, firstline);
-        // TODO Auto-generated constructor stub
 
         this.context=context;
         this.firstline=firstline;
@@ -40,47 +39,4 @@ public class AdapterHome extends ArrayAdapter {
 
         return rowView;
     };
-
 }
-/*
-package com.akhilagarwal96.vitfreshers;
-
-public class AdapterHome {
-    private String firstline,secondline;
-    private Integer imgid;
-
-    public AdapterHome() {
-    }
-
-    public AdapterHome(String firstline, String secondline, Integer imgid){
-        this.firstline=firstline;
-        this.secondline=secondline;
-        this.imgid=imgid;
-    }
-
-    public String getFirstline(){
-        return firstline;
-    }
-
-    public void setFirstline(String holiday){
-        this.firstline = holiday;
-    }
-
-    public String getSecondline(){
-        return secondline;
-    }
-
-    public void setSecondline(String date){
-        this.secondline = date;
-    }
-
-    public Integer getImgid(){
-        return imgid;
-    }
-
-    public void setImgid(Integer timeline){
-        this.imgid = timeline;
-    }
-}
-
-*/

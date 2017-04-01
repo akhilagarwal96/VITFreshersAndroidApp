@@ -7,9 +7,8 @@
     tools:context="com.akhilagarwal96.vitfreshers.AddProduct"
     android:background="@drawable/bcgd">
 
-
     <ImageButton
-        android:layout_width="80dp"
+        android:layout_width="70dp"
         android:layout_height="30dp"
         android:id="@+id/buy_button"
         android:visibility="visible"
@@ -25,7 +24,8 @@
         android:gravity="center_horizontal"
         android:inputType="textCapSentences"
         android:layout_below="@+id/buy_button"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="20dp"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,7 +36,8 @@
         android:gravity="center"
         android:inputType="textCapSentences"
         android:layout_below="@+id/sell_name"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="15dp"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -47,7 +48,8 @@
         android:gravity="center"
         android:inputType="textCapSentences"
         android:layout_below="@+id/sell_location"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="15dp"/>
+
     <EditText
         android:layout_width="370dp"
         android:layout_height="200dp"
@@ -58,7 +60,8 @@
         android:gravity="center"
         android:inputType="textCapSentences"
         android:layout_below="@+id/sell_number"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="15dp"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -69,6 +72,5 @@
         android:gravity="center"
         android:layout_below="@+id/sell_description"
         android:layout_centerHorizontal="true" />
-
 
 </RelativeLayout>

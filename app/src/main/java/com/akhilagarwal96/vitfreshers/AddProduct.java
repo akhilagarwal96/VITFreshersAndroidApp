@@ -3,8 +3,19 @@ package com.akhilagarwal96.vitfreshers;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class AddProduct extends AppCompatActivity{
 
@@ -12,11 +23,15 @@ public class AddProduct extends AppCompatActivity{
 
     EditText name,location,number,desc;
     Button submit;
+    ImageButton buy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_product);
+
+        final FirebaseDatabase database = FirebaseDatabase.getInstance();
+        final DatabaseReference databaseReference = database.getReference("Products/");
 
         name = (EditText) findViewById(R.id.sell_name);
         location = (EditText) findViewById(R.id.sell_location);
@@ -24,76 +39,33 @@ public class AddProduct extends AppCompatActivity{
         desc = (EditText) findViewById(R.id.sell_description);
 
         submit = (Button) findViewById(R.id.sell_submit);
-
-    }
-}
-/*
-    private RelativeLayout layout_buy;
-    Button submit,resale_home;
-    EditText name,location,number,desc;
-    String n,l,no,d;
-
-
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-
-        View rootView = inflater.inflate(R.layout.activity_resale, container, false);
-
-        name = (EditText) rootView.findViewById(R.id.sell_name);
-        location = (EditText) rootView.findViewById(R.id.sell_location);
-        number = (EditText) rootView.findViewById(R.id.sell_number);
-        desc = (EditText) rootView.findViewById(R.id.sell_description);
-
-        n = name.getText().toString();
-        l = location.getText().toString();
-        no = number.getText().toString();
-        d = desc.getText().toString();
-
-        submit = (Button) rootView.findViewById(R.id.sell_submit);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (n == "" || l == "" || no == "" || d == "") {
-                    AlertDialog empty = new AlertDialog.Builder(getContext()).create();
-                    empty.setTitle("Oops! Your product cannot be added");
-                    empty.setMessage("Please fill in the details");
-                    empty.setButton("Back", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.cancel();
-                        }
-                    });
-                }
-                else {
+                Toast.makeText(AddProduct.this, "Hello", Toast.LENGTH_SHORT).show();
 
-                    //ref.child("Products").setValue("Do you have data? You'll love Firebase.");
+                SimpleDateFormat dateformat = new SimpleDateFormat("dd-MM-yyyy");
 
-                    AlertDialog submitted = new AlertDialog.Builder(getContext()).create();
-                    submitted.setTitle("Submitted!");
-                    submitted.setMessage("Your product has been successfully added");
-                    submitted.setButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            AddProduct.this.getActivity().finish();
-                        }
-                    });
-                    submitted.show();
-                }
+                String currentDate = DateFormat.getDateInstance().format(new Date());
+                Log.d("Checking Date",currentDate);
+                databaseReference.child(currentDate);
+
+                DatabaseReference databaseReference1 = databaseReference.child(currentDate).push();
+
+                databaseReference1.child("Seller Name").setValue(name.getText().toString());
+                databaseReference1.child("Location").setValue(location.getText().toString());
+                databaseReference1.child("Seller Contact").setValue(number.getText().toString());
+                databaseReference1.child("Description").setValue(desc.getText().toString());
+                databaseReference1.child("Verification Tag").setValue("N");
             }
         });
 
-        layout_buy = (RelativeLayout) rootView.findViewById(R.id.sell_cards);
-        resale_home = (Button) rootView.findViewById(R.id.sell_button);
-        resale_home.setOnClickListener(new View.OnClickListener() {
+        buy = (ImageButton) findViewById(R.id.buy_button);
+        buy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               layout_buy.setVisibility(RelativeLayout.VISIBLE);
+                finish();
             }
         });
-        return rootView;
     }
-
-
-}*/
+}

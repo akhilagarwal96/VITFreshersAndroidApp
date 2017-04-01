@@ -7,8 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.firebase.client.Firebase;
-
 public class Services extends Fragment {
 
     ListView ser_list;
@@ -37,14 +35,14 @@ public class Services extends Fragment {
             "04164202222"
     };
     Integer[] img = {
-            R.drawable.vit,
-            R.drawable.hc,
-            R.drawable.hc,
-            R.drawable.ugao,
-            R.drawable.bh,
-            R.drawable.lh,
+            R.drawable.ug,
+            R.drawable.ambulance,
+            R.drawable.ambulance,
+            R.drawable.ug,
+            R.drawable.building,
+            R.drawable.building,
             R.drawable.indianbank,
-            R.drawable.nate,
+            R.drawable.laundry,
             R.drawable.dominos,
             R.drawable.papa_johns
     };
@@ -61,8 +59,6 @@ public class Services extends Fragment {
             R.drawable.phone,
     };
     int j=0;
-
-    Firebase ref = new Firebase("https://vit-freshers-app.firebaseio.com/");
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

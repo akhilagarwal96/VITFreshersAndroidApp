@@ -7,8 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.firebase.client.Firebase;
-
 public class FAQs extends Fragment{
 
     ListView list1;
@@ -29,10 +27,6 @@ public class FAQs extends Fragment{
             "VIT offers a great number of Physical Education facilities including Squash, Swimming, Badminton, Gym and more. Registration to any of these can be done online through the Student Login."
     };
     int i=0;
-
-
-
-    Firebase ref = new Firebase("https://vit-freshers-app.firebaseio.com/");
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

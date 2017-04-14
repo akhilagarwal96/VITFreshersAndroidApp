@@ -34,18 +34,18 @@
         android:gravity="center"
         android:textAlignment="center"
         android:entries="@array/suggestions"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"/>
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/feedback"
         android:ems="17"
         android:hint="Please write here"
         android:textColorHint="@color/white"
-        android:gravity="center_horizontal"
         android:textColor="@color/white"
         android:layout_below="@+id/spinner_option"
+        android:layout_above="@+id/submit"
         android:inputType="textCapSentences" />
 
     <Button
@@ -54,8 +54,8 @@
         android:layout_centerHorizontal="true"
         android:text="Submit"
         android:textColor="@color/white"
-        android:background="@android:color/transparent"
+        android:background="@drawable/rectangle"
         android:id="@+id/submit"
-        android:layout_below="@+id/feedback"/>
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

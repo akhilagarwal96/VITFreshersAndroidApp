@@ -37,9 +37,11 @@ public class Feedback extends Fragment implements AdapterView.OnItemSelectedList
         feedback = (EditText) rootView.findViewById(R.id.feedback);
         spinnerOption = (Spinner) rootView.findViewById(R.id.spinner_option);
 
+        feedback.setGravity(Gravity.CENTER);
+
         spinnerOption.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-               ((TextView) adapterView.getChildAt(0)).setGravity(Gravity.CENTER_HORIZONTAL);
+                ((TextView) adapterView.getChildAt(0)).setGravity(Gravity.CENTER_HORIZONTAL);
                 ((TextView) adapterView.getChildAt(0)).setTextColor(Color.WHITE);
             }
             @Override

@@ -21,25 +21,22 @@ android:layout_height="match_parent">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Small Text"
         android:id="@+id/textView01"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:gravity="center"
         android:textColor="@color/white"
         android:layout_centerHorizontal="true" />
 
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Large Text"
         android:id="@+id/textView02"
         android:textColor="@color/white"
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/textView01"
-        android:layout_marginTop="5dp" />
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
 
     </RelativeLayout>
 

@@ -3,156 +3,237 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
-        jumboMode="true"
+        jar="C:\Android\.android\build-cache\1b04fec843f18e4f648122f35d6c3864c8553e17\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
-        revision="23.0.2"
-        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_751bbae095ec725d806a93f28f589d6c23b4a09f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="1ac56e5801e986583cbe27f2cce57f626cc7ff93">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.2.0_570923704baec3b296baadc091abcdb3261ba84d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="1ccbc26be2c465c622a48310e8092241b01abe80">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.0.0_d04e404e7f9e71273db6bda0ad88bd97fce83877.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.0_9996185bbaa3bd6fb72f136e34a2d14c0f2feb40.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="3e38eff81ff885f1d4d9e56293b352c85406052d">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_5fb79fb549a6b77201d4d03a86ee10d7d4f88f6a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="bd75f9f0296fe220da6d0ad961831b04541c4452">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-10.2.0_f79f407462998fea76d3dca6276f5d7907b46b56.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="0d5cbbbfe040201c7569478b70a13b58fd11aab4">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-10.2.0_20e9d1d253475e2bd15cb31356f5c280c5b13350.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="a61e7010aa7be5da53cd1bc5279630510c9a4912">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-10.2.0_e26aa404d0429820db21b664a7be66a81ef1c2f0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="0e301f24b283f14b564f660c9abe863af6be5896">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-connection-10.2.0_147a476d3de18619e85b56e23568533d7911ce50.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\de.hdodenhof-circleimageview-2.1.0_4de0d219cee6db0ef90db97ce381735afe165be4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\10.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
+        revision="25.0.2"
         sha1="94fca868854457ede6df15c902938468c71d579e">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-10.2.0_23030451368caf9d74b11b45ea31d890daa3d026.jar" />
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes_2e6a4cd47cb68a78cacdfe75e513afcb653903d6.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.2.0\jars\classes.jar"
-        jumboMode="true"
+        jar="C:\Android\.android\build-cache\e165e90e6913c041daadb0ea8ff096dfaff6754b\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
-        revision="23.0.2"
-        sha1="ce9112e08a027c8620ae693983e38cdbb9f6371b">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-10.2.0_046db73a288841101ca32ed92708803f4c43b708.jar" />
+        revision="25.0.2"
+        sha1="0e301f24b283f14b564f660c9abe863af6be5896">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes_2590d0abed6ae4eec016ac133c7a5bd12fc35b80.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Adm\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0\support-annotations-24.0.0.jar"
-        jumboMode="true"
+        jar="C:\Android\.android\build-cache\2421a31fcbd083c76d3927e010aa2a18549a928f\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
         optimize="true"
-        revision="23.0.2"
-        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\support-annotations-24.0.0_747e87d7dee7a77f388923533fcd386d40ec15b9.jar" />
+        revision="25.0.2"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_82907c81810bde9a3c3ba68bc10f60f2f196204e.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.0.0\jars\classes.jar"
-        jumboMode="true"
+        jar="C:\Android\.android\build-cache\58c42959f449c2a553311a332058ef2785e06f27\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
-        revision="23.0.2"
-        sha1="40e7757d9b06db670062ddb3cf5b30c129b2fd8c">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.0.0_cebaad2254ebfcda4b14fee458a46e4420e342bf.jar" />
+        revision="25.0.2"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes_e42f495d7bf52c2ae4f59f0b9fdf2791000529b8.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
-        jumboMode="true"
+        jar="C:\Android\.android\build-cache\c6fca5f20e9984da56bc28624cb4692b4ce9b02a\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
         optimize="true"
-        revision="23.0.2"
-        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0_4409216876e297cc26582253686e9b82bc6cc7e3.jar" />
+        revision="25.0.2"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_b0261b46d0c190ff2675e5f4398f34f6b9958bfa.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.0\jars\classes.jar"
-        jumboMode="true"
+        jar="C:\Android\.android\build-cache\183842956917d605c3b19da2e5f8b92221f9f6f3\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
-        revision="23.0.2"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes_f85c916ac0a14be4d71a5da9c0319f67bf1cdd27.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Adm\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\support-annotations-25.0.0_9c2885439fc8aa941d15505dc78e183e5650cd46.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\.android\build-cache\3addf1292a92c36ffb13d3c736cfbc4a9361924a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes_f26823fcbad065045597b3ef3f72f8df0c72b209.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\.android\build-cache\2421a31fcbd083c76d3927e010aa2a18549a928f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes_b3c0e75360128a335c83f89a6fece30d2bc11ad1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\.android\build-cache\ef38389744e07c6c418e92066135651baf70e250\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
         sha1="3d6951cb416ebf8c66a32b9480808ca247b68344">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-10.2.0_99beddbc598fe1a22b44431083288ed1d1769987.jar" />
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes_e37b71984f7234b42ccd63dddc44609c2505f94a.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
+        jar="C:\Android\.android\build-cache\42e65da2523ef765baecc183ef3684523ac76c6a\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
-        revision="23.0.2"
-        sha1="503c18ccce4cd82b47b5f0bd88caefbe0446b581">
-        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\instant-run_5f7fa5092598f41d80f1514f6c386ba31c738144.jar" />
+        revision="25.0.2"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes_2c828ba9a844639ba637b1bad44be184cddfd1f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\.android\build-cache\ca8d254feb7390b3fdf05c5d6f7840a60ad74b98\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8a372c4191f80489770a231f7be4820b204b886a">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes_b8a81d57fb6e38fa549ea49089ce081e5caef232.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\.android\build-cache\56f10507ef24168f0855aaba710fcca4204fc00a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes_e699fb42bc38dfa639ae47318db00b3afc773a94.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\.android\build-cache\9c8386714c2160f27038b8934c909828753c407c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes_298b7e579f3943f028d54e150acad8607e8c18c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\.android\build-cache\6a81c85781db2d0b5c72016431dd38ec4053b51e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ce9112e08a027c8620ae693983e38cdbb9f6371b">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes_a30331331596dcff0160e58265a99c17981f7617.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\.android\build-cache\8374999a47b87adb8f35b80a12174b067a0aeb26\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes_e3caea8d33e7073c1292a44842953559fe9b6b54.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\.android\build-cache\92b62a558e155463e7f6cf3a709d96b425a44040\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_30c88d84c4513e98bd491a94b38d82c458819216.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\.android\build-cache\92b62a558e155463e7f6cf3a709d96b425a44040\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes_c1c3ea02c972714dfffc98dfe4f09c5fbf2ae2ec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\.android\build-cache\58c42959f449c2a553311a332058ef2785e06f27\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_05b2162d81957dfd16119681a0e5b73f555199bd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\.android\build-cache\fe86a0589c4223bb72af0ad21d72d6a98a3bcd73\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a61e7010aa7be5da53cd1bc5279630510c9a4912">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes_6f68c79944bee159ffd4d5bc443e9a266304a684.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\.android\build-cache\3a40be16d782ec722a2e312789973ccdfdb2f959\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1ac56e5801e986583cbe27f2cce57f626cc7ff93">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes_6e7e2635e845127db3107bcfea1ed21d2232dddf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\.android\build-cache\d955bbc4a4c61cd11a1a4749d1ac593880674040\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d5cbbbfe040201c7569478b70a13b58fd11aab4">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes_4718cd58c84071fabfb8b54ef3ad6a55e63919a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\.android\build-cache\52655a04e48c331b37c0ad0d98ca2d2657efc5df\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bd75f9f0296fe220da6d0ad961831b04541c4452">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes_6952301e9554ad35156072b8c31929399774f06c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\.android\build-cache\9c8386714c2160f27038b8934c909828753c407c\output\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_79e52d32f251388df9facb97603f6dd0ee214343.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\.android\build-cache\c6fca5f20e9984da56bc28624cb4692b4ce9b02a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes_689734efa1758daab6341e7b2676ca105e2ceb53.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\.android\build-cache\0b6fc1b5fe6f8b67a1a3135459f80ba52802f053\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="C:\Users\Adm\AndroidStudioProjects\VITFreshers\app\build\intermediates\pre-dexed\debug\classes_91949e50527263479589023a6f161d671ca635ef.jar" />
     </item>
 
 </items>

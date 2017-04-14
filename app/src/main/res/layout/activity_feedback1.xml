@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/aqua">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight=".20"
+        android:id="@+id/image_feedback"
+        android:src="@drawable/adg"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight=".20"
+        android:text="Write To Us!"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".20"
+        android:id="@+id/spinner_option"
+        android:textAlignment="center"
+        android:entries="@array/suggestions">
+    </Spinner>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight=".20"
+        android:id="@+id/feedback"
+        android:hint="Please write here"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="textCapSentences"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight=".20"
+        android:id="@+id/submit"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:background="@drawable/rectangle"
+        android:layout_gravity="center"/>
+</LinearLayout>

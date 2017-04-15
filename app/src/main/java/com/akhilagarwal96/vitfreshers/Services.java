@@ -48,7 +48,7 @@ public class Services extends Fragment {
     };
     int[] button = {
             R.drawable.phone,
-            R.drawable.adg,
+            R.drawable.phone,
             R.drawable.phone,
             R.drawable.phone,
             R.drawable.phone,

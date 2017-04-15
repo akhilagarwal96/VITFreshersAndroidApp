@@ -38,9 +38,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56e460d9-a167-4bbb-b6b1-f082fd46f1d9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_feedback1.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VITFreshersAndroidApp" afterPath="$PROJECT_DIR$/VITFreshersAndroidApp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/akhilagarwal96/vitfreshers/Services.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/akhilagarwal96/vitfreshers/Services.java" />
     </list>
     <ignored path="VITFreshers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,8 +97,8 @@
       <file leaf-file-name="Services.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/akhilagarwal96/vitfreshers/Services.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+            <state relative-caret-position="98">
+              <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -1887,7 +1887,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/akhilagarwal96/vitfreshers/Home.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/akhilagarwal96/vitfreshers/Services.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/akhilagarwal96/vitfreshers/AddProduct.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/home_list.xml" />
@@ -1910,6 +1909,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/akhilagarwal96/vitfreshers/Resale.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/akhilagarwal96/vitfreshers/RecyclerAdapterExchange.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/akhilagarwal96/vitfreshers/AdapterServices.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/akhilagarwal96/vitfreshers/Services.java" />
       </list>
     </option>
   </component>
@@ -2566,7 +2566,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649574" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5863248" sideWeight="0.49092284" order="13" side_tool="false" content_ui="tabs" />
@@ -3062,8 +3062,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/akhilagarwal96/vitfreshers/Services.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+        <state relative-caret-position="98">
+          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
           <folding />
         </state>
       </provider>

@@ -1,7 +1,6 @@
 package com.akhilagarwal96.vitfreshers;
 
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -66,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
                             .setTabListener(this));
         }
 
-        Typeface custom_font = Typeface.createFromAsset(getAssets(), "fonts/fontfamily.ttf");
+        //Typeface custom_font = Typeface.createFromAsset(getAssets(), "fonts/fontfamily.ttf");
         
     }
 
